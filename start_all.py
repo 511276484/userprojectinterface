@@ -26,7 +26,7 @@ def start():
                                        templates=3
                                        )
 
-    # 3、运行测试用例
+    # 3、测试用例
     runner.run(thread_count=2)
 
 start()

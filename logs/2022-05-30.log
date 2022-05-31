@@ -1,0 +1,20 @@
+2022-05-30 17:16:51,338 INFO [testlogin.py(testlogin:23)] - =======正确参数登录========
+2022-05-30 17:16:51,338 INFO [testlogin.py(testlogin:27)] - 1 请求url http://192.0.0.153:8088/UserProject/LoginServlet  请求方式 post
+2022-05-30 17:16:51,341 INFO [testadduser.py(testadduser:29)] - =======正确参数添加========
+2022-05-30 17:16:51,341 INFO [testlogin.py(testlogin:31)] - 2 设置请求参数 name admin  , pw 123
+2022-05-30 17:16:51,341 INFO [testadduser.py(testadduser:33)] - 1 请求url http://192.0.0.153:8088/UserProject/GetAllEmpServlet  请求方式 post
+2022-05-30 17:16:51,342 INFO [testadduser.py(testadduser:46)] - 2 设置请求参数 action add , name da,address 北京,phone 134323232,token <module 'token' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python39-32\\lib\\token.py'>
+2022-05-30 17:16:51,386 INFO [testlogin.py(testlogin:36)] - 3 响应的数据 {'code': '1000', 'message': 'login success', 'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXNzd29yZCI6IjEyMyIsImV4cCI6MTY1NDA4MjIxMSwidXNlcm5hbWUiOiJhZG1pbiJ9.iGVLEuIvJDd4ImnsC64k9LJ6TgenoRX0IAiqYMLzL2k'} 
+2022-05-30 17:16:51,386 INFO [testlogin.py(testlogin:39)] - 4 预期结果 1000 : 实际结果 1000  
+2022-05-30 17:16:51,386 INFO [testlogin.py(testlogin:23)] - =======空名字参数========
+2022-05-30 17:16:51,386 INFO [testlogin.py(testlogin:27)] - 1 请求url http://192.0.0.153:8088/UserProject/LoginServlet  请求方式 post
+2022-05-30 17:16:51,387 INFO [testlogin.py(testlogin:31)] - 2 设置请求参数 name   , pw 123
+2022-05-30 17:16:51,392 INFO [testlogin.py(testlogin:36)] - 3 响应的数据 {'code': '1001', 'message': 'name error'} 
+2022-05-30 17:16:51,392 INFO [testlogin.py(testlogin:39)] - 4 预期结果 1001 : 实际结果 1001  
+2022-05-30 17:16:51,510 INFO [testadduser.py(testadduser:51)] - 3 响应的数据 {'code': '1000', 'message': 'add success'} 
+2022-05-30 17:16:51,510 INFO [testadduser.py(testadduser:54)] - 4 预期结果 1000 : 实际结果 1000  
+2022-05-30 17:16:51,510 INFO [testadduser.py(testadduser:29)] - =======错误action参数添加========
+2022-05-30 17:16:51,510 INFO [testadduser.py(testadduser:33)] - 1 请求url http://192.0.0.153:8088/UserProject/GetAllEmpServlet  请求方式 post
+2022-05-30 17:16:51,510 INFO [testadduser.py(testadduser:46)] - 2 设置请求参数 action adad , name da,address 北京,phone 134323232,token <module 'token' from 'C:\\Users\\1\\AppData\\Local\\Programs\\Python\\Python39-32\\lib\\token.py'>
+2022-05-30 17:16:51,531 INFO [testadduser.py(testadduser:51)] - 3 响应的数据 {'code': '1006', 'message': 'action paramer error'} 
+2022-05-30 17:16:51,531 INFO [testadduser.py(testadduser:54)] - 4 预期结果 1006 : 实际结果 1006  

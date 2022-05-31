@@ -1,0 +1,25 @@
+[
+  {
+    "title": "正确参数添加",
+    "action": "add",
+    "name": "da",
+    "address": "北京",
+    "phone": 134323232,
+    "url" : "/GetAllEmpServlet",
+    "method": "post",
+    "message": "1000",
+    "error": "正确参数添加失败"
+  },
+  {
+    "title": "错误action参数添加",
+    "action": "adad",
+    "name": "da",
+    "address": "北京",
+    "phone": 134323232,
+    "url" : "/GetAllEmpServlet",
+    "method": "post",
+    "message": "1006",
+    "error": "action参数错误"
+  }
+]
+

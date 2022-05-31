@@ -1,0 +1,21 @@
+[
+  {
+    "title": "正确参数登录",
+    "name": "admin",
+    "pw": "123",
+    "url" : "/LoginServlet",
+    "method": "post",
+    "message": "1000",
+    "error": "正确参数登录失败"
+  },
+  {
+    "title": "空名字参数",
+    "name": "",
+    "pw": "123",
+     "url" : "/LoginServlet",
+    "method": "post",
+    "message": "1001",
+    "error": "正确参数登录失败"
+  }
+]
+
